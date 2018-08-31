@@ -1,0 +1,154 @@
+
+body{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    position: fixed;
+    background-color: white;
+    padding:10px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+}
+
+img{
+	width: auto;
+	height: auto;
+	float: left;
+	padding: 10px;
+	border-color: white;
+	border-radius: 2px;
+	display: inline-block;
+	max-height: 200px;
+	max-width: 100%;
+    margin: auto;
+
+}
+video{
+    width: auto;
+    height: auto;
+    float: left;
+    padding: 10px;
+    border-color: white;
+    border-radius: 2px;
+    align-content: center;
+    display: inline-block;
+    max-height: 200px;
+    max-width: 100%; 
+    margin: auto;
+
+}
+
+.row{
+	float:left;
+	padding-top: 40px;
+    margin: auto;
+
+}
+
+.cover{
+    padding: 0px 10px;
+    max-height: 100px;
+    margin: 0 auto;
+
+}
+
+/* SIDE MENU PART */
+
+.sm-wrapper{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.sidemenu{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #C6BCB2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.sidemenu a{
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'inconsolata', monospace;
+    color: #ffffff;
+    display: block;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.sidemenu .close{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+/* SIDE MENU HOVER EFFECT */
+
+.sm-wrapper a:after{
+    z-index: -1;
+    position: absolute;
+    left: 0%;
+    width: 0;
+    height: 50px;
+    background: #27ABB5;
+    content: '';
+    transition: width 0.35s ease-in-out;
+}
+
+.sm-wrapper a:hover:after{
+    width: 10%;
+}
+
+.sm-wrapper a:hover{
+    padding-left: 30px;
+    transition: 0.35s ease-in-out;
+}
+
+/* CONTENT PART */
+
+#pg-content{
+    transition: margin-left 0.5s;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+h1{
+    font-family: "inconsolata", monospace;
+    font-size: 5em;
+    text-align: center;
+    letter-spacing: 20px;
+    padding: 0px 0px 10px 25px;
+    color: #5b5b5b;
+}
+
+
+
+span{
+    letter-spacing: 20px;
+    padding-left: 44px;
+    color: #27ABB5;
+    text-align: center;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+
+}
